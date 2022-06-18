@@ -4,4 +4,5 @@ sudo snap install docker ;
 sudo groupadd docker;
 sudo usermod -aG kvm docker $user;
 newgrp docker;
+sudo snap install kubectl --classic;
 sudo snap install ngrok;
