@@ -6,3 +6,4 @@ sudo usermod -aG kvm docker $user;
 newgrp docker;
 sudo snap install kubectl --classic;
 sudo snap install ngrok;
+sudo npm install -g generator-jhipster
