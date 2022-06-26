@@ -3,6 +3,8 @@ sudo snap install vlc;
 
 sudo snap install postman;
 sudo snap install brave; 
+sudo snap install slack
+
 #sudo snap install chromium;
 
 sudo snap install intellij-idea-ultimate --classic;
