@@ -25,7 +25,7 @@ sudo apt install gnome-tweak-tool;
 # end
 
 
-
+sudo snap install gitkraken --classic;
 
 
 
