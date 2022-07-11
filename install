@@ -1,0 +1,10 @@
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.3.2-linux-x86_64.tar.gz
+tar -xzf elasticsearch-8.3.2-linux-x86_64.tar.gz
+cd elasticsearch-8.3.2/
+./bin/elasticsearch
+
+
+curl -O https://artifacts.elastic.co/downloads/kibana/kibana-8.3.2-linux-x86_64.tar.gz
+tar -xzf kibana-8.3.2-linux-x86_64.tar.gz
+cd kibana-8.3.2/ 
+./bin/kibana
