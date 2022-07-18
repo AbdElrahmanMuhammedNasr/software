@@ -1,0 +1,1 @@
+ngrok http port -log=stdout > ngrok.log
