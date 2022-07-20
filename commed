@@ -1,1 +1,7 @@
 ngrok http 8070 --log=stdout > ngrok.log &
+```
+    uiContentList.stream().forEach(uiContent -> {
+              map.computeIfAbsent(uiContent.getScreen_name(), s -> new HashMap<>())
+                  .computeIfAbsent(uiContent.getKey(), s -> new StringBuilder())
+                  .append(uiContent.getEgypt_value());
+});```
