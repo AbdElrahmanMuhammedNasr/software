@@ -1,0 +1,28 @@
+  <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+        </dependency>
+        
+        
+            public static void main(String[] args) {
+        String teamName = "BANADOL ";
+
+        List propositionName = Arrays.asList("PANADOL E", "BANOD 7" ,"artiza Belgrade", "Partizn");
+        String theName = null;
+        double match = Integer.MIN_VALUE;
+        // This one seems better
+        for (Object name : propositionName) {
+            double distance = StringUtils.getJaroWinklerDistance(teamName, name.toString());
+            System.out.println(name + " " + distance );
+            if (distance > match) {
+                match = distance;
+                theName = name.toString();
+//                System.out.println("match " + match + " and the name " + theName);
+
+            }
+        }
+        System.out.println("========================================");
+        System.out.println("final match " + match + " and final name " + theName);
+
+    }
