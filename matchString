@@ -26,3 +26,7 @@
         System.out.println("final match " + match + " and final name " + theName);
 
     }
+    ==============================================
+    
+        Page<TagRxPrescriptionDTO> page = tagRxPrescriptionService.findAllByDoctor(id, pageable);
+        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(ServletUriComponentsBuilder.fromCurrentRequest(), page);
