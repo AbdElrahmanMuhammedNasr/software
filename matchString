@@ -30,3 +30,6 @@
     
         Page<TagRxPrescriptionDTO> page = tagRxPrescriptionService.findAllByDoctor(id, pageable);
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(ServletUriComponentsBuilder.fromCurrentRequest(), page);
+        ==============================================
+  if(fmt.format(Date.from(tagRxPrescriptionList.get(i).getCreatedDate())).equals(fmt.format(Date.from(Instant.now())))){
+
