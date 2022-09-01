@@ -32,4 +32,8 @@
         HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(ServletUriComponentsBuilder.fromCurrentRequest(), page);
         ==============================================
   if(fmt.format(Date.from(tagRxPrescriptionList.get(i).getCreatedDate())).equals(fmt.format(Date.from(Instant.now())))){
+  
+  ============================
+   restTemplate.getMessageConverters()
+            .add(0, new StringHttpMessageConverter(StandardCharsets.UTF_8));
 
