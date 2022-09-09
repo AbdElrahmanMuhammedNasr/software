@@ -22,6 +22,7 @@ sudo snap install drawio
 #for tweak tool
 sudo add-apt-repository universe;
 sudo apt install gnome-tweak-tool;
+# font sawasdee regular 11
 # end
 
 
