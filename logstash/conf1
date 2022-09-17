@@ -9,7 +9,7 @@ input {
     schedule => "* * * * *" # cronjob schedule format (see "Helpful Links")
     # jdbc_paging_enabled => "true"
     # jdbc_page_size => "300"
-    statement => "select  * from actor where actor_id = 6"
+    statement => "select  * from actor"
     # tracking_column_type => "timestamp"
   
     }
