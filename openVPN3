@@ -1,0 +1,20 @@
+https://community.openvpn.net/openvpn/wiki/OpenVPN3Linux?_ga=2.161080253.1427285306.1674645902-55571808.1664370766&_gl=1*gblb8y*_ga*NTU1NzE4MDguMTY2NDM3MDc2Ng..*_ga_SPGM8Y8Y79*MTY3NDY1MDkwMS45LjEuMTY3NDY1MDk0OS4xMi4wLjA
+
+
+# root
+apt install apt-transport-https
+// create penvpn-repo-pkg-keyring.gpg
+curl -fsSL https://swupdate.openvpn.net/repos/openvpn-repo-pkg-key.pub | gpg --dearmor > /etc/apt/trusted.gpg.d/openvpn-repo-pkg-keyring.gpg
+curl -fsSL https://swupdate.openvpn.net/community/openvpn3/repos/openvpn3-$DISTRO.list >/etc/apt/sources.list.d/openvpn3.list
+
+###DISTRO
+Debian	9	stretch	amd64	-
+Debian	10	buster	amd64, arm64*	-
+Debian	11	bullseye	amd64, arm64*	-
+Ubuntu	18.04	bionic	amd64, arm64*	-
+Ubuntu	20.04	focal	amd64, arm64*	yes*
+Ubuntu	21.10	impish	amd64, arm64*	yes*
+Ubuntu	22.04	jammy	amd64, arm64*	yes*
+####
+sudo openvpn3 session-start --config file.ovpn
+sudo openvpn3 session-manage --disconnect --config file.ovpn
